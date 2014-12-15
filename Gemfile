@@ -1,0 +1,11 @@
+gem 'jekyll'
+gem 'guard'
+gem 'guard-jekyll-plus'
+gem 'guard-livereload'
+gem 'ffi'
+gem 'mercenary'
+gem 'redcarpet'
+gem 'jekyll-watch'
+gem 'classifier-reborn'
+
+source 'http://rubygems.org'
