@@ -121,7 +121,7 @@ address{
 	@media (min-width: $screen-sm-min) {
 		.vert-icon{
 			position: relative;
-			margin-top: -20em;	
+			margin-top: -15em;	
 		}
 	}
 	>li{
@@ -149,13 +149,16 @@ address{
 			}
 		}
 	}
-	.bg-blue{
-		background-color: $link-color;
+	.bg-black{
+		background-color: #444444;
 		[class^="icon-"],[class^="flaticon-"]{
 			color: $link-color;
 		}
 		a,a:link,a:visited{
 			color: $brand-warning;	
+		}
+		h2{
+			color: $brand-primary;
 		}
 	}
 	.bg-green{
@@ -164,30 +167,47 @@ address{
 			color: $brand-primary;	
 		}
 	}
-	.bg-black{
-		background-color: #444;	
+	.bg-yellow{
+		background-color: $brand-warning;
+		h2{
+			color: $brand-danger;
+		}		
+	}
+	.bg-red{
+		background-color: $brand-danger;
+		h2{
+			color: $almost-white;
+		}		
+	}
+	.bg-gray{
+		background-color: $link-color;
+		color: $almost-white;
 	}
 	.memberships{
-		@extend .col-md-4;
-		@extend .col-md-offset-4;
+		@extend .col-md-8;
+		@extend .col-md-offset-2;
 		box-shadow: rgb(34, 34, 34) 1px 1px 2px 1px;
-		color: $state-info-text;
+		color: $brand-primary;
+		background-color: $almost-white;
 		text-align: center;
-		tr:nth-child(1){
-			border-bottom: 1px solid $state-success-border;
-			@extend h4;
-			color: $state-success-text;
-			td{
-				border-top: 0;				
-			}
+		.bg-red,.bg-green,.bg-yellow,.bg-black{
+			color: $almost-white;
+		}
+		td{
+			font-size: 1.5vw;
+			border: 1px solid $gray-light;
+			vertical-align: middle;
 		}
 		td:nth-child(1){
-			background: $almost-white;
-			color: $link-color;
+			@extend .bg-gray;
+			@extend h5;
+			max-width: 10vw;
 		}
-		td:nth-child(2){
-			background: $link-color;
-			color: $almost-white;
+		td:last-child{
+			max-width: 4.5vw;
+		}
+		.smalltext{
+			font-size: 1.2vw;
 		}
 	}
 	
