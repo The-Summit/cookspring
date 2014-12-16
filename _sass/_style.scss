@@ -193,8 +193,16 @@ address{
 		.bg-red,.bg-green,.bg-yellow,.bg-black{
 			color: $almost-white;
 		}
+		tr:nth-child(1){
+			td{
+				white-space: nowrap;
+				padding: 10px;
+				@extend h5;
+			}
+		}
+
 		td{
-			font-size: 1.5vw;
+			font-size: 1.3vw;
 			border: 1px solid $gray-light;
 			vertical-align: middle;
 		}
@@ -202,13 +210,10 @@ address{
 			@extend .bg-gray;
 			@extend h5;
 			line-height: 1em;
-			max-width: 10vw;
-		}
-		td:last-child{
-			max-width: 4.5vw;
+			max-width: 15vw;
 		}
 		.smalltext{
-			font-size: 1.2vw;
+			font-size: 1vw;
 		}
 	}
 	
