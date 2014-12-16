@@ -187,7 +187,7 @@ address{
 		@extend .col-md-8;
 		@extend .col-md-offset-2;
 		box-shadow: rgb(34, 34, 34) 1px 1px 2px 1px;
-		color: $brand-primary;
+		color: $gray;
 		background-color: $almost-white;
 		text-align: center;
 		.bg-red,.bg-green,.bg-yellow,.bg-black{
@@ -201,6 +201,7 @@ address{
 		td:nth-child(1){
 			@extend .bg-gray;
 			@extend h5;
+			line-height: 1em;
 			max-width: 10vw;
 		}
 		td:last-child{
