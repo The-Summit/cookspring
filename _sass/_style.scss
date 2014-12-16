@@ -197,10 +197,6 @@ address{
 				white-space: nowrap;
 				padding: 10px;
 				@extend h5;
-				&:nth-child(1){
-					@extend .bg-black;
-					border: 0;
-				}
 			}
 		}
 
@@ -223,8 +219,20 @@ address{
 			}
 		}
 		.smalltext{
-			font-size: 1vw;
+			font-size: 1.5vw;
 		}
+		td{
+			font-size: 1.6vw;
+		}
+		@media (min-width: $screen-md-min) {
+			td{
+				font-size: 1.3vw;
+			}
+			.smalltext{
+				font-size: 1vw;
+			}
+		}
+		
 	}
 	
 	.align-left{
