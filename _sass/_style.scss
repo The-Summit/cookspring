@@ -186,7 +186,6 @@ address{
 	.memberships{
 		@extend .col-md-8;
 		@extend .col-md-offset-2;
-		box-shadow: rgb(34, 34, 34) 1px 1px 2px 1px;
 		color: $gray;
 		background-color: $almost-white;
 		text-align: center;
@@ -198,19 +197,30 @@ address{
 				white-space: nowrap;
 				padding: 10px;
 				@extend h5;
+				&:nth-child(1){
+					@extend .bg-black;
+					border: 0;
+				}
 			}
 		}
 
 		td{
 			font-size: 1.3vw;
+			line-height: 1em;
 			border: 1px solid $gray-light;
 			vertical-align: middle;
-		}
-		td:nth-child(1){
-			@extend .bg-gray;
-			@extend h5;
-			line-height: 1em;
-			max-width: 15vw;
+			&.money{
+				.smalltext{
+					color: $gray-light;
+				}
+			}
+			&:nth-child(1){
+				@extend .bg-gray;
+				@extend h5;
+				padding: 10px;
+				line-height: 1em;
+				max-width: 15vw;
+			}
 		}
 		.smalltext{
 			font-size: 1vw;
