@@ -149,40 +149,6 @@ address{
 			}
 		}
 	}
-	.bg-black{
-		background-color: #444444;
-		[class^="icon-"],[class^="flaticon-"]{
-			color: $link-color;
-		}
-		a,a:link,a:visited{
-			color: $brand-warning;	
-		}
-		h2{
-			color: $brand-primary;
-		}
-	}
-	.bg-green{
-		background-color: $brand-primary;
-		[class^="icon-"],[class^="flaticon-"]{
-			color: $brand-primary;	
-		}
-	}
-	.bg-yellow{
-		background-color: $brand-warning;
-		h2{
-			color: $brand-danger;
-		}		
-	}
-	.bg-red{
-		background-color: $brand-danger;
-		h2{
-			color: $almost-white;
-		}		
-	}
-	.bg-gray{
-		background-color: $link-color;
-		color: $almost-white;
-	}
 	.memberships{
 		@extend .col-md-8;
 		@extend .col-md-offset-2;
@@ -243,6 +209,7 @@ address{
 	}
 }
 .navbar{
+	visibility: visible;
 	.logo-wrap{
 		margin-left: -15px;
 		position: relative;
@@ -289,4 +256,56 @@ address{
 			padding: 10px 5px;
 		}
 	}
+}
+.modal{
+	h1,h2,h3,h4,h5,p,label{
+		color: $gray;
+	}
+	h1,h2,h3,h4,h5{
+		text-transform:capitalize;
+	}
+}
+.bg-black{
+	background-color: #444444;
+	[class^="icon-"],[class^="flaticon-"]{
+		color: $link-color;
+	}
+	a,a:link,a:visited{
+		color: $brand-warning;	
+	}
+	h2{
+		color: $brand-primary;
+	}
+}
+.bg-green{
+	background-color: $brand-primary;
+	[class^="icon-"],[class^="flaticon-"]{
+		color: $brand-primary;	
+	}
+	a,a:link,a:visited{
+		color: $brand-warning;	
+	}	
+}
+.bg-yellow{
+	background-color: $brand-warning;
+	h2{
+		color: $brand-danger;
+	}		
+}
+.text-yellow{
+	color: $brand-warning;
+	font-weight: 200;
+}
+.bg-red{
+	background-color: $brand-danger;
+	h2{
+		color: $almost-white;
+	}		
+}
+.text-red{
+	color: $brand-danger;
+}	
+.bg-gray{
+	background-color: $link-color;
+	color: $almost-white;
 }
