@@ -1,112 +1,40 @@
-header.container{
-	padding: 0;
-}
-.content-nav-padding{
-	padding-top: $navbar-collapsed-height;
-}
-.collapse{
-	display: block;
-}
 .navbar{
 	box-shadow: 0px 0px 3px 1px #222;
 	color: $navbar-default-color;
-	@extend .collapse;
-	.nav{
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	&.collapse{
-		height: $navbar-collapsed-height !important;
-		min-height: $navbar-collapsed-height;
-		.navbar-nav{
-			visibility: hidden;
-		}
-		.navbar-brand{
-			visibility: visible;
-		}
-	}
-	&.collapse.in{
-		height: $navbar-height !important;
-		min-height: $navbar-height;
-		.navbar-nav{
-			visibility: visible;
-		}
-		.navbar-brand{
-			visibility: hidden;
-		}
-	}
-	&.collapsing{
-		.navbar-nav,.navbar-brand{
-			@extend .invisible;
-		}
-	}
-	.navbar-toggle{
-		z-index: 5000;
-		padding: 5px;
-		margin: 5px 15px;
-		border: none;
-		.icon-bar{
-			background-color: $brand-primary;
-		}
-		&:focus{
-			background-color: $almost-white;
-		}
-	}
-	li{
-		font-family: $headings-font-family;
+	>li{
 		font-weight: $headings-font-weight;
 		font-size: $font-size-h5;
-		text-transform: uppercase;
-		 li{
-			font-size: $font-size-h6;
-		}
-		>a{
-			padding: 2px 30px;
-			text-shadow: none;
+	}
+	.center{
+		width: 100%;
+		text-align: center;
+		> li {
+			float: none;
+			display: inline-block;
 		}
 	}
 	.navbar-brand{
 		position: absolute;
-		left: 10px;
-		padding: 3px;
-		z-index: 50;
-	}
-	.logo img{
-		height: (($navbar-collapsed-height * .8));
-	}
-	.menu-item-type-search.open{
-		margin-bottom: 0;
-		form{
-			.glyphicon{
-				color: #444;
-			}
+		img{
+			max-height: $navbar-height * .8;
 		}
-		.dropdown-toggle{
-			padding-left: 10px;
-			padding-right: 10px;
-		}
-		.dropdown-menu{
-			left: -80px;
+	}
+	.social-group{
+		height: $navbar-height;	
+		position: relative;
+		a{
+			position: absolute;	
+			right: 5px;
 			padding: 0;
-			background-color: transparent !important;
 		}
-		.form-group{
-			margin:0;
+		a.top{
+			top: 10px;
 		}
-	}
-	.menu-item-type-contact.open{
-		.dropdown-toggle{
-			padding-left: 30px;
-			padding-right: 30px;
+		a.bottom{
+			bottom: -5px;
 		}
-		.dropdown-menu{
-			left: -120px;
-		}
-		li>a{
-			padding: 5px 10px;
+		.social{
+			height: ($navbar-height - 15) / 2;
 		}
 	}
 }
-	.content-nav-padding{
-		padding-top: $navbar-height + 10px;
-	}
