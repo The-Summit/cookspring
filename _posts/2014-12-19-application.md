@@ -1,6 +1,6 @@
 ---
 layout: default
-bg: #ffffff
+permalink: application.html
 ---
 <form role="form" class="col-md-6 col-md-offset-3" id="application">
 	<h3><span class="text-red">Cook</span><span class="text-yellow">Spring</span> Application</h3>

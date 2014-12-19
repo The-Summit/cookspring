@@ -230,3 +230,13 @@ h3{
 		border-width: 2px;
 	}
 }
+.columns{
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	list-style-position: inside;	  
+}
+.embed-responsive.embed-responsive-16by9 {
+	padding-bottom: 55.58%;
+	margin-bottom: 30px;
+}
