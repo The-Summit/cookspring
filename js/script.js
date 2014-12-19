@@ -1,4 +1,6 @@
-var $j = jQuery.noConflict();
+var $j = jQuery.noConflict(),
+	formUrl = "http://thesummitfw.com/vendor/sendgrid-php.php"
+	//formUrl = "http://sjmize.dev.ambassador.am/vendor/sendgrid-php.php";
 $j(function() {
 	$j("#contactSubmit").on("click",function(){
 		var isValid = true;
@@ -23,24 +25,94 @@ $j(function() {
 		};
 		
 		$j("#contact").modal("hide");
-		$j("#ajax-title").text("Loading...");
-		$j("#ajax-msg").text("Loading...");
-		$j("#ajax").modal("show");
-	
+		ajaxLoading();
+		
 		$j.ajax({
-			url: "http://thesummitfw.com/vendor/sendgrid-php.php",
+			url: formUrl,
 			type: 'GET',
 			dataType: 'json',
 			data: data,
 			success: function(d){
-				$j("#ajax-title").text(d.statusTitle);
-				$j("#ajax-msg").text(d.status);
+				ajaxUpdate(d.statusTitle,d.status);
 			},
-			error: function(){
-				$j("#ajax-title").text("Error");
-				$j("#ajax-msg").text("Sorry, there was an error. Please call us at 260.446.3200.  Thanks!");		
-			},
+			error: ajaxError,
 			crossDomain: false
 		})
 	});
+	$j("#application").on("submit",function(event){
+		event.preventDefault();
+		ajaxLoading();
+		var isValid = true;
+		$j(this).find("input,textarea,select").each(function(){
+			if($j(this).val().length<1){
+				$j(this).closest(".form-group").addClass("has-error");
+				isValid = false;
+			}
+		});
+		if(!isValid){
+			ajaxInvalid();
+			return 0;
+		}else{
+			$j(".has-error").removeClass("has-error");
+			var vals = $j(this).serializeObject();			
+			var data = {
+				to: $j("#email").val(),
+				subject: "Thanks for reaching out to us!",
+				name: $j("#name").val(),
+				title: "Are you ready for this?",
+				body: $j("#fname").val() + ", thanks for your interest in <a href='http://cookspringfw.com'>CookSpring</a>.  We'll follow up with you quickly so we can get you moving! <br /><br />Your Friends at CookSpring",
+				phone: $j("#phone").val(),
+				app: true
+			};			
+			vals = $j.extend(vals,data);
+			$j.ajax({
+				url: formUrl,
+				type: 'GET',
+				dataType: 'json',
+				data: vals,
+				success: function(d){
+					ajaxUpdate(d.statusTitle,d.status);
+				},
+				error: ajaxError,
+				crossDomain: false				
+			});
+		}
+	});
 });
+
+function ajaxLoading(){
+	$j("#ajax-title").text("Loading...");
+	$j("#ajax-msg").text("Loading...");
+	$j("#ajax").modal("show");
+}
+function ajaxError(){
+	$j("#ajax-title").text("Error");
+	$j("#ajax-msg").text("Sorry, there was an error. Please call us at 260.446.3200.  Thanks!");	
+	$j("#ajax").modal("show");	
+}
+function ajaxUpdate(title,msg){
+	$j("#ajax-title").text(title);
+	$j("#ajax-msg").text(msg);	
+}
+function ajaxInvalid(){
+	$j("#ajax-title").text("Validation Error");
+	$j("#ajax-msg").text("Please fill out all of the form fields.  Thanks!");
+	$j("#ajax").modal("show");	
+}
+
+$j.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $j.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};

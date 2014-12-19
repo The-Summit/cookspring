@@ -4,7 +4,7 @@ html{
 }
 body{
 	background: inherit;
-	padding-bottom: 70px;
+	padding-bottom: $navbar-height + 20;
 }
 @media (max-width: 600px) {
 	p,li{
@@ -24,6 +24,30 @@ h1{
 h2{
 	margin-bottom: .35em;
 	color: $brand-warning;
+}
+h3{
+	text-transform: capitalize;
+}
+.wrapper{
+	>form{
+		color: $gray;
+		background: $almost-white;
+		padding: 10px 60px;
+		box-shadow: 0 0 3px 1px #222;
+		h3{
+			color: $gray;
+		}
+		h4{
+			margin-top: 20px;
+			color: $link-color;
+		}
+		label{
+			font-weight: 400;
+		}
+		select,input[type=number]{
+			padding-top: 1px;
+		}
+	}
 }
 .post-list{
 	list-style: none;
@@ -186,4 +210,23 @@ h2{
 .bg-gray{
 	background-color: $link-color;
 	color: $almost-white;
+}
+.question{
+	border-radius: 50% 50%;
+	border: 1px solid $link-color;
+	font-size: 16px;
+	height: 1em;
+	width: 1em;
+	display: inline-block;
+	text-align: center;
+	padding: 2px 2px 3px;
+	box-sizing: content-box;
+	top: -5px;
+	position: relative;
+	color: $brand-danger;
+	&:hover{
+		text-decoration: none;
+		font-weight: bold;
+		border-width: 2px;
+	}
 }
