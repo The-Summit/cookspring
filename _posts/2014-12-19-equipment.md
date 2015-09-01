@@ -26,5 +26,4 @@ permalink: equipment.html
 - Stainless steel work stations
 - Hand washing sinks
 - Industrial grill with griddle
-- Microwave
 {: .col-md-offset-1 .columns}
