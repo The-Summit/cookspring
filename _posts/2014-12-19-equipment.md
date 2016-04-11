@@ -4,7 +4,7 @@ title: Equipment List
 permalink: equipment.html
 ---
 
-###The Kitchen###
+### The Kitchen ###
 {: .col-md-offset-1}
 
 {::nomarkdown}

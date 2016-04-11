@@ -5,11 +5,10 @@ gem 'guard-jekyll-plus'
 gem 'guard-livereload'
 gem 'ffi'
 gem 'mercenary'
-gem 'redcarpet'
 gem 'jekyll-watch'
 gem 'classifier-reborn'
 gem 'guard-bundler'
 gem 'win32console'
-gem 'wdm'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 source 'http://rubygems.org'
