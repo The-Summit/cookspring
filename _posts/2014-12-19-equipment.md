@@ -13,7 +13,7 @@ permalink: equipment.html
 </div>
 {:/nomarkdown}
 
-###CookSpring Equipment List###
+### CookSpring Equipment List ###
 {: .col-md-offset-1}
 - 4 full size convection ovens
 - Gas range with 6 burners & 2 ovens
