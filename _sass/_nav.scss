@@ -19,6 +19,9 @@
 			max-height: $navbar-height * .8;
 		}
 	}
+	.navbar-toggle collapsed{
+		left: 85px;
+	}
 	.social-group{
 		height: $navbar-height;	
 		position: relative;
