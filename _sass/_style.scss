@@ -240,3 +240,21 @@ h3{
 	padding-bottom: 55.58%;
 	margin-bottom: 30px;
 }
+#member-data{
+	overflow: hidden;
+	.member{
+		margin-bottom: 30px;
+		position: relative;
+		min-height: 400px;
+		overflow: hidden;
+		img{
+		    position: absolute;
+			margin: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			max-height: 400px;
+		}
+	}
+}
