@@ -84,7 +84,7 @@ $j(function() {
 			var r = v.records.sort(function(){return 0.5 - Math.random() });
 			$j.each(r,function(i,el){
 				if(el.fields.Logo){
-					$j("#member-data").append("<div class='member col-md-3'><img class='img-responsive' src='" + el.fields.Logo[0].url + "' /></div>");
+					$j("#member-data").append("<div class='member col-xs-6 col-md-3'><img class='img-responsive' src='" + el.fields.Logo[0].url + "' /></div>");
 				}
 			});			
 		});
