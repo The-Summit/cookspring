@@ -88,9 +88,15 @@ $j(function() {
 				}
 			});			
 		});
-
-		$j("#member-data");
 	}
+	if($j("#temp-data").length){
+		$j.getJSON("https://www.imonnit.com/json/SensorList/dGhlc3VtbWl0OkNoYXNwMTAxMA==",function(v){
+			$j.each(v.Result,function(i,el){
+				$j("#temp-data").append("<h1>" + el.SensorName + "</h1>");
+				$j("#temp-data").append("<h2>" + el.CurrentReading + "</h2>");
+			})
+		});
+	};
 });
 
 function ajaxLoading(){
