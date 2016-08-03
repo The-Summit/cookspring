@@ -2,6 +2,9 @@ var $j = jQuery.noConflict(),
 	formUrl = "http://thesummitfw.com/vendor/sendgrid-php.php"
 	//formUrl = "http://sjmize.dev.ambassador.am/vendor/sendgrid-php.php";
 $j(function() {
+	if(window.location.href.indexOf("nonav")>0){
+		$j(".navbar-fixed-bottom,.purechat-widget,.chat").remove();
+	}
 	$j("#contactSubmit").on("click",function(){
 		var isValid = true;
 		$j(".form-control").each(function(){
