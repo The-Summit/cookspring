@@ -1,10 +1,9 @@
 html{
-	background: $brand-primary;
+	background: #444444;
 	min-height: 100%;
 }
 body{
 	background: inherit;
-	padding-bottom: $navbar-height + 20;
 }
 @media (max-width: 600px) {
 	p,li{
@@ -29,6 +28,7 @@ h3{
 	text-transform: capitalize;
 }
 .wrapper{
+	margin: 15px;
 	>form{
 		color: $gray;
 		background: $almost-white;

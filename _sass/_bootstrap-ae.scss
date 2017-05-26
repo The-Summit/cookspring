@@ -36,7 +36,6 @@ $font-size-base:				24px;
 $text-color:					$almost-white;
 
 //Headings
-$headings-font-family:		'mohavebold', sans-serif;
 $headings-font-family:		'Montserrat', sans-serif;
 $headings-font-weight:		700;
 $headings-color: 				$almost-white;
@@ -48,15 +47,13 @@ $font-size-h4:		1.3vw;
 $font-size-h5:		24px;
 
 // Basics of a navbar
-$navbar-height:						75px;
-$navbar-collapsed-height:			75px;
 $navbar-default-color:				$link-color;
-$navbar-default-link-color:			$link-color;
+$navbar-default-link-color:			$almost-white;
 $navbar-default-link-hover-color:	$brand-primary;
-$navbar-default-link-active-color:	$brand-primary;
-$navbar-default-bg:					$almost-white;
-$navbar-default-link-active-bg:		darken($navbar-default-bg, 3.5%);
-$navbar-default-border:				darken($navbar-default-bg, 6.5%);
+$navbar-default-link-active-color:	$link-color;
+$navbar-default-bg:					#444444;
+$navbar-default-link-active-bg:		0;
+$navbar-default-border:				transparent;
 
 //Sizing
 // Small screen / tablet

@@ -6,7 +6,7 @@ layout: default
 	<ul class="post-list">
 	{% for post in site.posts %}
 		{%if post.front %}
-		<li class="{% cycle 'bg-green', 'bg-yellow', 'bg-black' %} {% cycle 'text-left', 'text-right' %} row">
+		<li class="{% cycle 'bg-black', 'bg-green', 'bg-yellow' %} {% cycle 'text-left', 'text-right' %} row">
 			<div class="{%if post.image %}col-sm-6 {% else %} col-sm-12 {% endif %}">
 				<h1 id="{{post.title | join | downcase}}">{{ post.title }}</h1>
 				<h2>{{ post.subtitle }}</h2>
