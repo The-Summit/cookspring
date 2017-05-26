@@ -1,29 +1,46 @@
 ---
 layout: default
-title: Equipment List
-permalink: equipment.html
+title: The Kitchen
+permalink: kitchen.html
 ---
 
-### The Kitchen ###
+<div class="row"><div class="col-md-offset-2 col-md-8"><img src="images/map.png" alt="Kitchen Layout" class="img-responsive" /></div></div>
+
+### Green Kitchen ###
 {: .col-md-offset-1}
 
-{::nomarkdown}
-<div class="col-md-offset-1 col-md-10 embed-responsive embed-responsive-16by9">
-<iframe src="https://www.flickr.com/photos/127890613@N02/sets/72157649827402161/player" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-</div>
-{:/nomarkdown}
+- Gas range: 6-burner with 24" griddle
+- Convection oven
+- Conventional oven
+{: .col-md-offset-1 .columns}
 
-### CookSpring Equipment List ###
+### Red Kitchen ###
 {: .col-md-offset-1}
-- 4 full size convection ovens
-- Gas range with 6 burners & 2 ovens
+
+- Gas range: 6-burner
+- Double-stacked convection oven
+- Conventional oven
+- Steamer
+{: .col-md-offset-1 .columns}
+
+### Yellow Kitchen ###
+{: .col-md-offset-1}
+
+- Gas range: 6-burner with 24" griddle
+- Convection oven
+- Conventional oven
+- Vegetable chopper
+{: .col-md-offset-1 .columns}
+
+### Misc. ###
+{: .col-md-offset-1}
+
 - Commercial dishwashing machine
-- 3-compartment sink
-- 2 deep fryers 
-- Walk-in freezer & cooler
-- Enclosed warming & cooling racks
+- 3 basin sink
+- Chilled, frozen, and dry storage
 - Ice machine
-- Stainless steel work stations
+- Stainless steel work stations (stationary & wheeled)
+- Vacuum sealer
+- Mobile warming unit
 - Hand washing sinks
-- Industrial grill with griddle
 {: .col-md-offset-1 .columns}
