@@ -14,7 +14,7 @@ permalink: kitchen.html
 - Conventional oven
 {: .col-md-offset-1 .columns}
 
-### Red Kitchen ###
+### [Red Kitchen](/tours/red) ###
 {: .col-md-offset-1}
 
 - Gas range: 6-burner
@@ -23,7 +23,7 @@ permalink: kitchen.html
 - Steamer
 {: .col-md-offset-1 .columns}
 
-### Yellow Kitchen ###
+### [Yellow Kitchen](/tours/yellow) ###
 {: .col-md-offset-1}
 
 - Gas range: 6-burner with 24" griddle
@@ -37,7 +37,7 @@ permalink: kitchen.html
 
 - Commercial dishwashing machine
 - 3 basin sink
-- Chilled, frozen, and dry storage
+- Chilled, frozen, and [dry](/tours/dry) storage
 - Ice machine
 - Stainless steel work stations (stationary & wheeled)
 - Vacuum sealer
