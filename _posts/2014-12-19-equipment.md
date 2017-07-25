@@ -6,7 +6,7 @@ permalink: kitchen.html
 
 <div class="row"><div class="col-md-offset-2 col-md-8"><img src="images/map.png" alt="Kitchen Layout" class="img-responsive" /></div></div>
 
-### Green Kitchen ###
+### [Green Kitchen](/tours/green) ###
 {: .col-md-offset-1}
 
 - Gas range: 6-burner with 24" griddle
