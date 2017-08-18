@@ -1,0 +1,100 @@
+{
+  "mapwidth": "1121",
+  "mapheight": "565",
+  "levels": [
+    {
+      "id": "main-floor",
+      "title": "Main Floor",
+      "map": "images/kitchen.svg",
+	  "show": "true",
+      "locations": [
+        {
+		  "id": "yellow-shape",
+		  "title": "Yellow Kitchen",
+          "about": "Perfect for a wide variety of uses",
+          "description": "<ul><li>Gas range: 6-burner with 24\" griddle</li><li>Convection oven</li><li>Conventional oven</li><li>Vegetable chopper</li></ul>",
+          "link": "/tours/yellow",
+          "x": "0.4778",
+          "y": "0.2731",
+          "zoom": "0"
+        },
+        {
+		  "id": "red-shape",
+		  "title": "Red Kitchen",
+          "about": "Perfect for baking and light stovetop use",
+          "description": "<ul><li>Gas range: 6-burner</li><li>Double-stacked convection oven</li><li>Conventional oven</li><li>Steamer</li></ul>",
+          "link": "/tours/red",
+          "x": "0.4810",
+          "y": "0.4764",
+          "zoom": "0"
+        },
+        {
+		  "id": "green-shape",
+		  "title": "Green Kitchen",
+          "about": "Perfect for catering or in conjunction with the Prep Space!",
+          "description": "<ul><li>Gas range: 6-burner with 24\" griddle</li><li>Convection oven</li><li>Conventional oven</li></ul>",
+          "link": "/tours/green",
+          "x": "0.9138",
+          "y": "0.3000",
+		  "pin": "hidden",
+          "zoom": "0"
+        },        
+		{
+		  "id": "dry-shape",
+		  "title": "Dry Storage",
+          "about": "Need to store things onsite?",
+          "description": "Plenty of storage for all of your equipment and supplies!",
+          "link": "/tours/dry",
+          "x": "0.1007",
+          "y": "0.2789",
+		  "pin": "hidden",
+          "zoom": "0"
+        },        
+		{
+		  "id": "warewashing-shape",
+		  "title": "Warewashing",
+          "about": "Clean up - fast!",
+          "description": "A large commercial dish machine as well as a 3-basin sink to handle any job you can throw at it",
+          "link": "",
+          "x": "0.2594",
+          "y": "0.8183",
+		  "pin": "hidden",
+          "zoom": "0"
+        },        
+		{
+		  "id": "chiller-shape",
+		  "title": "Chiller",
+          "about": "Store cold things - but not too cold",
+          "description": "A large walk-in chiller that we monitor and maintain.",
+          "link": "",
+          "x": "0.3135",
+          "y": "0.2146",
+		  "pin": "hidden",
+          "zoom": "0"
+        },        
+		{
+		  "id": "freezer-shape",
+		  "title": "Freezer",
+          "about": "Store cold things - very cold!",
+          "description": "A large walk-in freezer that we monitor and maintain.",
+          "link": "",
+          "x": "0.3135",
+          "y": "0.3863",
+		  "pin": "hidden",
+          "zoom": "0"
+        },        
+		{
+		  "id": "prep-shape",
+		  "title": "Prep Space",
+          "about": "Chop, mix, package!",
+          "description": "A large prep space with rolling tables, electricity, & microwaves",
+          "link": "",
+          "x": "0.7738",
+          "y": "0.4200",
+		  "pin": "hidden",
+          "zoom": "0"
+        }	
+      ]
+    }
+  ]
+}

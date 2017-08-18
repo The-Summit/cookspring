@@ -27,6 +27,11 @@ h2{
 h3{
 	text-transform: capitalize;
 }
+svg{
+	text,tspan{
+		font-family: $font-family-sans-serif !important;
+	}
+}
 .wrapper{
 	margin: 15px;
 	>form{
