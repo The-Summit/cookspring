@@ -33,12 +33,12 @@ $font-family-sans-serif:	'Montserrat', sans-serif;
 $font-family-base:			$font-family-sans-serif;
 $line-height-base:			1.3;
 $font-size-base:				24px;
-$text-color:					$almost-white;
+$text-color:					#444444;
 
 //Headings
 $headings-font-family:		'Montserrat', sans-serif;
 $headings-font-weight:		700;
-$headings-color: 				$almost-white;
+$headings-color: 				$brand-primary;
 $headings-line-height:		.8em;
 $font-size-h1:		9vw;
 $font-size-h2:		6vw;
@@ -48,10 +48,10 @@ $font-size-h5:		24px;
 
 // Basics of a navbar
 $navbar-default-color:				$link-color;
-$navbar-default-link-color:			$almost-white;
-$navbar-default-link-hover-color:	$brand-primary;
+$navbar-default-link-color:			$brand-primary;
+$navbar-default-link-hover-color:	$brand-secondary;
 $navbar-default-link-active-color:	$link-color;
-$navbar-default-bg:					#444444;
+$navbar-default-bg:					transparent;
 $navbar-default-link-active-bg:		0;
 $navbar-default-border:				transparent;
 

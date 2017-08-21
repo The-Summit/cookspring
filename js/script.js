@@ -26,7 +26,7 @@ var map = "";
 $(document).ready(function(){
 	var h = $(window).height() - $(".navbar-brand img").height() - 75;
 	map = $("#Map").mapplic({
-		sidebar: true,
+		sidebar: false,
 		height: h,
 		markers: false,
 		fullscreen: false,
