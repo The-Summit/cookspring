@@ -2,13 +2,18 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
 	<script src="{{ site.baseurl }}/js/plugins.js"></script>
-	
+
+{% if page.url contains 'kitchen' %}
 	<script src="{{ site.baseurl }}/js/mapplic/hammer.min.js"></script>
 	<script src="{{ site.baseurl }}/js/mapplic/jquery.mousewheel.js"></script>
 	<script src="{{ site.baseurl }}/js/mapplic/magnific-popup.js"></script>
 	<script src="{{ site.baseurl }}/js/mapplic/mapplic.js"></script>
-	
-	
+{% endif %}	
+
+{% if page.url contains 'members' %}
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+{% endif %}	
 	<script src="{{ site.baseurl }}/js/script.js"></script>
 	
 	<script>
