@@ -39,23 +39,27 @@ function loadMembers(){
 						masterCls.indexOf(e) === -1 ? masterCls.push(e) : "";
 					});
 					var cls = el.fields.Industry.toString().replace(/[^a-z\,]+/ig,"-").replace(","," ").toLowerCase();
-					$("#member-data").append("<div class='member col-xs-6 col-md-3 " + cls +"'><a href='" + el.fields.Website + "'><img class='img-responsive' src='" + el.fields.Logo[0].url + "' /></a></div>");
+					el.fields.cls = cls;
+					$("#member-data").append(Mustache.render("<div class='member {{fields.cls}}'><img class='img-responsive' src='{{fields.Logo.0.url}}'><a href='{{fields.Website}}'><span class='glyphicon glyphicon-link'></span> {{fields.Website}}</a></div>",el));
 				}
 			});
 			$.each(masterCls,function(i,e){
-				var data = e.replace(/[^a-z\,]+/ig,"-").toLowerCase()
-				$(".holder .btn-group-vertical").append('<button class="btn btn-group btn-default" data-filter=".'+ data+'">' + e +'</button>');
+				var data = e.replace(/[^a-z\,]+/ig,"-").toLowerCase();
+				var el = {data: data, e: e}
+				$(".holder .btn-group-vertical").append(Mustache.render('<button class="btn btn-group btn-default" data-filter=".{{data}}">{{e}}</button>',el));
 			})
 			$grid = $("#member-data").isotope({
 				itemSelector: '.member',
-				layoutMode: 'fitRows'
+				masonry: {
+					columnWidth: 250,
+					gutter: 10
+				}
 			});
 			$grid.imagesLoaded().progress( function() {
 			  $grid.isotope('layout');
 			});
 			$(".holder .btn-group-vertical").on("click", "button",function(){
 				var filterValue = $( this ).attr('data-filter');
-				console.log(filterValue);
 				$grid.isotope({filter:filterValue});
 			});
 			$(".holder .btn-group-vertical").each( function( i, buttonGroup ) {

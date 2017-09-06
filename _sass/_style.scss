@@ -1,3 +1,4 @@
+* { box-sizing: border-box; }
 html{
 	background: $almost-white;
 	min-height: 100%;
@@ -47,6 +48,15 @@ svg{
 			margin: 0;
 		}
 	}
+}
+.mapplic-container {
+	width: 75%;	
+}
+.mapplic-clickable:not(g), g.mapplic-clickable > *{
+	opacity: .75;
+}
+.mapplic-clickable:not(g):hover, g.mapplic-clickable:hover > *{
+	opacity: 1;
 }
 .wrapper{
 	margin: 15px;
@@ -313,26 +323,34 @@ svg{
 	margin-bottom: 30px;
 }
 #member-data{
-	overflow: hidden;
 	.member{
-		margin-bottom: 30px;
-		position: relative;
-		min-height: 400px;
+		width: 250px;
+		height: 250px;
+		margin-bottom: 10px;
 		overflow: hidden;
-		img{
-		    position: absolute;
-			margin: auto;
-			top: 0;
+		a{
+			background: rgba(255,255,255,.9);
+			font-size: 14px;
+			text-align: left;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			max-height: 400px;
+			bottom: 0;	
+			position: absolute;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding: 20px;
 		}
 	}
 }
-.btn-toolbar{
-	margin-bottom: 20px;
-}
-.btn-toolbar>.btn, .btn-toolbar>.btn-group{
-	margin-bottom: 20px;
+.btn-group-vertical{
+	width: 100%;
+	.btn{
+		font-size: 2vw;
+	}
+	@media (min-width: $screen-md-min) {
+		.btn{
+			font-size: 1.5vw;
+		}
+	}
 }
