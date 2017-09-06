@@ -1,8 +1,8 @@
 # Site settings
-title: Cookspring
+title: CookSpring
 email: webmaster@thesummitfw.com
 description: > # this means to ignore newlines until "baseurl:"
- The Cookspring Shared Kitchen at The Summit in Fort Wayne, Indiana, provides a 2200 square foot commercial kitchen for culinary entrepreneurs.
+ The Cookspring Shared Kitchen in Fort Wayne, Indiana is a 5000 square foot commercial kitchen for entrepreneurs, nonprofits, and other culinary-oriented organizations.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cookspringfw.com" # the base hostname & protocol for your site
 images: "/images/"
