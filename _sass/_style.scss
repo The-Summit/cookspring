@@ -324,13 +324,13 @@ svg{
 }
 #member-data{
 	.member{
-		width: 250px;
-		height: 250px;
+		width: 300px;
+		height: 300px;
 		margin-bottom: 10px;
 		overflow: hidden;
 		a{
 			background: rgba(255,255,255,.9);
-			font-size: 14px;
+			font-size: .75vw;
 			text-align: left;
 			left: 0;
 			right: 0;

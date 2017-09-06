@@ -40,7 +40,7 @@ function loadMembers(){
 					});
 					var cls = el.fields.Industry.toString().replace(/[^a-z\,]+/ig,"-").replace(","," ").toLowerCase();
 					el.fields.cls = cls;
-					$("#member-data").append(Mustache.render("<div class='member {{fields.cls}}'><img class='img-responsive' src='{{fields.Logo.0.url}}'><a href='{{fields.Website}}'><span class='glyphicon glyphicon-link'></span> {{fields.Website}}</a></div>",el));
+					$("#member-data").append(Mustache.render("<div class='member {{fields.cls}}'><img class='img-responsive' src='{{fields.Logo.0.url}}'><a href='{{fields.Website}}'><i class='fa fa-link'></i> {{fields.Website}}</a></div>",el));
 				}
 			});
 			$.each(masterCls,function(i,e){
@@ -51,7 +51,7 @@ function loadMembers(){
 			$grid = $("#member-data").isotope({
 				itemSelector: '.member',
 				masonry: {
-					columnWidth: 250,
+					columnWidth: 300,
 					gutter: 10
 				}
 			});
