@@ -88,15 +88,6 @@ svg{
     border-color: rgba(0, 68, 102,1) transparent transparent transparent;
     position: absolute;
 }
-.triangle-ne{
-	width: 0;
-    height: 0;
-	right: 0;
-    border-style: solid;
-    border-width:  0 50vw 60vh 0;
-    border-color: transparent rgba(0, 68, 102,1) transparent transparent;
-    position: absolute;
-}
 .post-list{
 	list-style: none;
 	margin: 0;	
@@ -261,17 +252,31 @@ svg{
 .row.bg-green{
 	background: 0;
 	position: relative;
-	overflow: visible;
+	overflow: hidden;
 }
 .row.bg-green:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100vh 0 0 104vw;
+    position: absolute;
+    border-color: transparent transparent transparent #efa605;
+    left: -15px;
+}
+.row.bg-black:nth-of-type(3){
+	position: relative;
+}
+.row.bg-black:nth-of-type(3):before{
 	content: "";
 	width: 0;
     height: 0;
+	right: 0;
+	bottom: 0;
     border-style: solid;
-    border-width: 100vh 0 0 50vw;
+    border-width:  0 0 50vh 100vw;
+    border-color: transparent transparent #018651 transparent;
     position: absolute;
-	border-color: transparent transparent transparent rgba(239, 166, 5,1);	
-	left: -15px;
 }
 .bg-yellow{
 	background-color: $brand-warning;
