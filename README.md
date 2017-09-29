@@ -1,6 +1,6 @@
 To Start: 
 ```
-bundle exec guard
+jekyll serve
 ```
 
 Troubles with Eventmachine (Ruby2+ in Windows):
